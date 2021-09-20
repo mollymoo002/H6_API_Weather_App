@@ -12,7 +12,7 @@
 
 var APIKey = "7ea56fe80e9e577a7387e69996a6f935";
 
-var requestUrl = "http://api.openweathermap.org/data/2.5/weather?q=&appid=7ea56fe80e9e577a7387e69996a6f935";
+var requestUrl = "http://api.openweathermap.org/data/2.5/weather?q=philadelphia&appid=7ea56fe80e9e577a7387e69996a6f935";
 console.log(requestUrl);
 fetch(requestUrl) 
     .then(function (response) {
