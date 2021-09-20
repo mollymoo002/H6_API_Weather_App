@@ -8,8 +8,7 @@
     <header>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-              <h1 class="display-4">Weather by Molly</h1>
-              <p class="lead">Here you can see the weather from different places. Try it out!</p>
+              <h1 class="display-4">Weather Dashboard</h1>
             </div>
           </div>
     </header>
@@ -18,7 +17,7 @@
     <div class="input-group">
         <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
           aria-describedby="search-addon" />
-        <button type="button" class="btn btn-outline-primary">search</button>
+        <button type="button" class="btn btn-outline-primary" id="save-button">search</button>
       </div>
 
       <div id="weather-info">
@@ -26,10 +25,10 @@
 
             <i id=""></i>
           </p>
-          <p id="temp">Temp:</p>
-          <p id="wind">Wind:</p>
-          <p id="humidity">Humidity:</p>
-          <p id="uv">UV Index:</p>
+          <p>Temp:<span id="temp"></span></p>
+          <p>Wind:<span id="wind"></span></p>
+          <p></span>Humidity:<span id="humidity"></span></p>
+          <p>UV Index:<span id="uv"></span></p>
       </div>
 
     <footer>

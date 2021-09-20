@@ -9,8 +9,12 @@
 // THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
 // WHEN I click on a city in the search history
 // THEN I am again presented with current and future conditions for that city
-
-var APIKey = "7ea56fe80e9e577a7387e69996a6f935";
+var searchBtnEl = document.getElementById("save-button");
+var tempTextEl = document.getElementById("temp");
+var windTextEl = document.getElementById("wind");
+var humidTextEl = document.getElementById("humidity");
+var uvTextEl = document.getElementById("uv");
+var cityTextEl = document.getElementById("city");
 
 var requestUrl = "http://api.openweathermap.org/data/2.5/weather?q=philadelphia&appid=7ea56fe80e9e577a7387e69996a6f935";
 console.log(requestUrl);
