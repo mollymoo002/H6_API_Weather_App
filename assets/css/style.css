@@ -21,3 +21,7 @@
 .uv-yellow {
     background: yellow;
 }
+
+ul {
+    display: block;
+}

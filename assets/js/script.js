@@ -17,10 +17,12 @@ var humidTextEl = $("#humidity");
 var uvTextEl = $("#uv");
 var cityTextEl = $("#city");
 var inputField = $(input);
+var searchHistory = $("#search-history");
 
 // gets the city name from the user and displays it along with the current time. It also informs our weather further down
 function getApi() {
   var city = $(inputField).val();
+  localStorage.setItem("CityName", city);
   var requestUrl =
     "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=7ea56fe80e9e577a7387e69996a6f935";
   var today = moment().format("MM/DD/YYYY");
@@ -32,11 +34,12 @@ function getApi() {
     })
     // defined the temp, wind, and humidity. Then it adds that to the p tags I hardcoded with labels
     .then(function (data) {
-      console.log(data);
       var tempMain = data.main.temp;
       var windMain = data.wind.speed;
       var humidityMain = data.main.humidity;
+      localStorage.getItem("CityName");
 
+      searchHistory.text(city);
       tempTextEl.text(tempMain);
       humidTextEl.text(humidityMain);
       windTextEl.text(windMain + "MPH");
@@ -57,7 +60,6 @@ function getApi() {
         })
         // displays the uv index and color codes it depending on the number
         .then(function (data) {
-          console.log(data);
           var uvColor = data.current.uvi;
           uvTextEl.text(uvColor);
           if (uvColor <= 2) {
