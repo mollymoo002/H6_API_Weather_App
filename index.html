@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Molly's Weather App</title>
+    <title>Weather Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -16,24 +16,29 @@
     <h3>Search for a City</h3>
     <div class="input-group">
         <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-          aria-describedby="search-addon" />
+          aria-describedby="search-addon" id="input"/>
         <button type="button" class="btn btn-outline-primary" id="save-button">search</button>
       </div>
 
       <div id="weather-info">
-          <p id="city">
-
-            <i id=""></i>
-          </p>
-          <p>Temp:<span id="temp"></span></p>
-          <p>Wind:<span id="wind"></span></p>
-          <p></span>Humidity:<span id="humidity"></span></p>
+          <p id="city"></p>
+          <p>Temp: <span id="temp"></span></p>
+          <p>Wind: <span id="wind"></span></p>
+          <p></span>Humidity: <span id="humidity"></span></p>
           <p>UV Index:<span id="uv"></span></p>
+      </div>
+
+      <div id="forecast">
       </div>
 
     <footer>
 
     </footer>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

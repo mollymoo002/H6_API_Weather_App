@@ -2,3 +2,22 @@
     background-color: rgb(83, 139, 243);
     color: white;
 }
+
+.uv-red {
+    background: red;
+}
+
+.uv-green {
+    background: green;
+}
+
+.uv-orange {
+    background: orange;
+}
+.uv-violet {
+    background: violet;
+}
+
+.uv-yellow {
+    background: yellow;
+}
