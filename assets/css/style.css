@@ -26,10 +26,6 @@ h3 {
     background: yellow;
 }
 
-ul {
-    display: block;
-}
-
 #forecast {
     display: flex;
     background: cornflowerblue;
@@ -41,3 +37,10 @@ ul {
 ul li {
     list-style-type: none;
 }
+
+@media screen and (max-width: 768px) {
+    #forecast,
+    ul {
+      flex-direction: column;
+    }
+  }
