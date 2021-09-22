@@ -41,14 +41,14 @@ function getApi() {
       humidTextEl.text(humidityMain);
       windTextEl.text(windMain + "MPH");
 
-      var cityHistory = [];
-      localStorage.setItem("City", JSON.stringify(city));
-      var savedCities = JSON.parse(localStorage.getItem("City"));
+      var cityHistory = JSON.parse(localStorage.getItem("City")) || [];
+      // var savedCities = JSON.parse(localStorage.getItem("City"));
       function getCityHistory() {
-          cityHistory.push(savedCities);
           searchHistory.html('<button>' + cityHistory + '</button>');
       };
       getCityHistory();
+      cityHistory.push(city);
+      localStorage.setItem("City", JSON.stringify(cityHistory));
 
       var lat = data.coord.lat;
       var lon = data.coord.lon;
