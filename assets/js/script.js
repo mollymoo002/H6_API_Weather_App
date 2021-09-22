@@ -41,10 +41,12 @@ function getApi() {
       humidTextEl.text(humidityMain);
       windTextEl.text(windMain + "MPH");
 
+      // adds the user input history into an array so there is a list of cities they searched before
       var cityHistory = JSON.parse(localStorage.getItem("City")) || [];
-      // var savedCities = JSON.parse(localStorage.getItem("City"));
       function getCityHistory() {
-          searchHistory.html('<button>' + cityHistory + '</button>');
+          for (i = 0; i < cityHistory.length; i++)
+            var buttonList = searchHistory.html('<button>' + cityHistory[i] + '</button>');
+            buttonList++;
       };
       getCityHistory();
       cityHistory.push(city);

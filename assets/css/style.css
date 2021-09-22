@@ -3,6 +3,10 @@
     color: white;
 }
 
+h3 {
+    text-align: center;
+}
+
 .uv-red {
     background: red;
 }
@@ -24,4 +28,16 @@
 
 ul {
     display: block;
+}
+
+#forecast {
+    display: flex;
+    background: cornflowerblue;
+    color: white;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+ul li {
+    list-style-type: none;
 }
