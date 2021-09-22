@@ -42,13 +42,11 @@ function getApi() {
       windTextEl.text(windMain + "MPH");
 
       var cityHistory = [];
-      localStorage.setItem("City", city)
-      var savedCities = localStorage.getItem(cityHistory);
-      function getCityHistory(event) {
-        event.preventDefault();
-        var citySearched = {
-          cityName
-        }
+      localStorage.setItem("City", JSON.stringify(city));
+      var savedCities = JSON.parse(localStorage.getItem("City"));
+      function getCityHistory() {
+          cityHistory.push(savedCities);
+          searchHistory.html(cityHistory);
       };
       getCityHistory();
 
@@ -110,3 +108,6 @@ function getApi() {
 
 // when the search button is clicked, the getApi function is called
 searchBtnEl.on("click", getApi);
+searchBtnEl.on("click", function () {
+  searchHistory.html("");
+})
