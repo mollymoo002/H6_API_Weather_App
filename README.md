@@ -6,9 +6,9 @@ What are the steps required to install your project? Provide a step-by-step desc
 ## Usage
 Please search for a city and press the search button. At the top, you see the current weather and if you scroll further down, you will see the next 5 days weather forecasts.
 
-   ```md
-   ![alt text](assets/images/screenshot.png)
-   ```
+
+   [screenshot of weather app](assets/images/screenshot.jpg)
+
 ## Credits
 - Ask BCS
 - My tutor John Pendergrass
