@@ -46,7 +46,7 @@ function getApi() {
       var savedCities = JSON.parse(localStorage.getItem("City"));
       function getCityHistory() {
           cityHistory.push(savedCities);
-          searchHistory.html(cityHistory);
+          searchHistory.html('<button>' + cityHistory + '</button>');
       };
       getCityHistory();
 
