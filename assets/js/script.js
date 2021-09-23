@@ -45,7 +45,7 @@ function getApi() {
       var cityHistory = JSON.parse(localStorage.getItem("City")) || [];
       function getCityHistory() {
           for (i = 0; i < cityHistory.length; i++)
-            var buttonList = searchHistory.html('<button>' + cityHistory[i] + '</button>');
+            var buttonList = searchHistory.html('<button id="history-button">' + cityHistory[i] + '</button>');
             buttonList++;
       };
       getCityHistory();

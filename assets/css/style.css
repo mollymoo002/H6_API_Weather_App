@@ -38,6 +38,11 @@ ul li {
     list-style-type: none;
 }
 
+#history-button {
+    background: rgb(144, 178, 243);
+    color: white;
+}
+
 @media screen and (max-width: 768px) {
     #forecast,
     ul {
