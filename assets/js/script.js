@@ -23,7 +23,7 @@ var searchHistory = $("#search-history");
 function getApi() {
   var city = $(inputField).val();
   var requestUrl =
-    "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=7ea56fe80e9e577a7387e69996a6f935";
+    "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=7ea56fe80e9e577a7387e69996a6f935";
   var today = moment().format("MM/DD/YYYY");
   var cityName = cityTextEl;
   cityName.text(city + ", " + today);
@@ -57,7 +57,7 @@ function getApi() {
 
     // api link to get the latitude and longitude of the area, needed for the uv index
       var requestUrlUv =
-        "http://api.openweathermap.org/data/2.5/onecall?&units=imperial&lat=" +
+        "https://api.openweathermap.org/data/2.5/onecall?&units=imperial&lat=" +
         lat +
         "&lon=" +
         lon +
