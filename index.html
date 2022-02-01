@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
@@ -24,12 +24,14 @@
 
     </div>
 
-      <div id="weather-info">
-          <p id="city"></p>
-          <p>Temp: <span id="temp"></span></p>
-          <p>Wind: <span id="wind"></span></p>
-          <p></span>Humidity: <span id="humidity"></span></p>
-          <p>UV Index:<span id="uv"></span></p>
+      <div id="weather-info" class="card text-center">
+          <p id="city" class="card-header"></p>
+          <div class="card-body">
+            <p>Temp: <span id="temp"></span></p>
+            <p>Wind: <span id="wind"></span></p>
+            <p></span>Humidity: <span id="humidity"></span></p>
+            <p>UV Index:<span id="uv"></span></p>
+          </div>
       </div>
 
       <div id="forecast" class="d-flex p-2">
